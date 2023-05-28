@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"logout_sidebar_link\"]\"}\n  (Session info: chrome=113.0.5672.127)",
+  "stacktrace": "Backtrace:\n\tGetHandleVerifier [0x00EB8893+48451]\n\t(No symbol) [0x00E4B8A1]\n\t(No symbol) [0x00D55058]\n\t(No symbol) [0x00D80467]\n\t(No symbol) [0x00D8069B]\n\t(No symbol) [0x00DADD92]\n\t(No symbol) [0x00D9A304]\n\t(No symbol) [0x00DAC482]\n\t(No symbol) [0x00D9A0B6]\n\t(No symbol) [0x00D77E08]\n\t(No symbol) [0x00D78F2D]\n\tGetHandleVerifier [0x01118E3A+2540266]\n\tGetHandleVerifier [0x01158959+2801161]\n\tGetHandleVerifier [0x0115295C+2776588]\n\tGetHandleVerifier [0x00F42280+612144]\n\t(No symbol) [0x00E54F6C]\n\t(No symbol) [0x00E511D8]\n\t(No symbol) [0x00E512BB]\n\t(No symbol) [0x00E44857]\n\tBaseThreadInitThunk [0x75A57D59+25]\n\tRtlInitializeExceptionChain [0x7745B74B+107]\n\tRtlClearBits [0x7745B6CF+191]\n"
+}

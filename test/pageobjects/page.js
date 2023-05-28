@@ -1,6 +1,6 @@
 class Page {
     open(path) {
-        const baseURL = 'https://www.saucedemo.com/'
+        const baseURL = `https://www.saucedemo.com/${path}`
 
         browser.open(baseURL + path)
     }
