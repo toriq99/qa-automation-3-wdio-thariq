@@ -9,11 +9,17 @@ class CartPage extends Page {
     // get deleted cart item 
     get deletedCartList () {return $('#cart_contents_container > div > div.cart_list > div.removed_cart_item')}
 
+    // get checkout button
+    get checkoutBtn () { return $('//*[@id="checkout"]')}
+
+
+    async clickCheckout () {
+        await this.checkoutBtn.click()
+    }
 
     async delCartItem () {
         await this.deletedCartList.click()
     }
-
 
     open() {
         return super.open('cart.html')
@@ -21,4 +27,4 @@ class CartPage extends Page {
 }
 
 
-module.exports = CartPage
+module.exports = new CartPage()
