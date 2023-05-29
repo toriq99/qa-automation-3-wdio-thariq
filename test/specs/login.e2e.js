@@ -26,30 +26,3 @@ describe('STORY LOGOUT', () => {
         await expect(LoginPage.loginTitle).toHaveTextContaining("Swag Labs")
     })
 })
-
-describe.skip('PRODUCT DETAILS', () => {
-    describe('as a user i want to view product details', () => {
-
-        it('should navigate to selected product detail', async() => {
-            
-            await InventoryPage.title.click()
-            await expect()
-        })
-    })
-
-    describe('as a user i want to sort product by descending order', () => {
-        
-        it('showing all product by descending (Z-A)', async() => {
-
-            await InventoryPage.descFilterButton.click()
-            await expect()
-        })
-    })
-
-    describe('as a user i want to sort product price from high to low', () => {
-        
-        it('showing all product from highest price to low', () => {
-
-        })
-    })
-})
