@@ -1,6 +1,5 @@
 const LoginPage = require('../pageobjects/login.page')
 const InventoryPage = require('../pageobjects/inventory.page')
-const LogoutPage = require('../pageobjects/logout.page')
 
 
 describe('STORY LOGIN', () => {
@@ -22,7 +21,8 @@ describe('STORY LOGOUT', () => {
 
     it('harus kembali ke loginpage', async() => {
         
-        await InventoryPage.btnLogout.click()
+        await InventoryPage.logout()
+
         await expect(LoginPage.loginTitle).toHaveTextContaining("Swag Labs")
     })
 })
