@@ -6,6 +6,7 @@ class LoginPage extends Page {
     get UsernameInput () { return $('#user-name')}
     get PasswordInput () { return $('#password')}
     get LoginButton () { return $('#login-button')}
+    get loginTitle () { return $('#root > div > div.login_logo')}
 
     async loginProcess (username, password) {
         await this.UsernameInput.setValue(username)

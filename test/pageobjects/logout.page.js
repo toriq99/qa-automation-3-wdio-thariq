@@ -1,15 +1,15 @@
-const Page = require('./page')
+// const Page = require('./page')
 
 
-class LogoutPage extends Page {
+// class LogoutPage extends Page {
 
-    get btnLogout () { return $('#logout_sidebar_link')}
-    get loginTitle () { return $('#root > div > div.login_logo')}
+//     get btnLogout () { return $('#logout_sidebar_link')}
+    
 
-    open() {
-        return super.open('inventory.html')
-    }
-}
+//     open() {
+//         return super.open('inventory.html')
+//     }
+// }
 
 
-module.exports = new LogoutPage()
+// module.exports = new LogoutPage()

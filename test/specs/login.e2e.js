@@ -22,8 +22,8 @@ describe('STORY LOGOUT', () => {
 
     it('harus kembali ke loginpage', async() => {
         
-        await LogoutPage.btnLogout.click()
-        await expect(LogoutPage.loginTitle).toHaveTextContaining("Swag Labs")
+        await InventoryPage.btnLogout.click()
+        await expect(LoginPage.loginTitle).toHaveTextContaining("Swag Labs")
     })
 })
 
