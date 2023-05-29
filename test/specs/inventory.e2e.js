@@ -21,7 +21,7 @@ describe('PRODUCT DETAILS', () => {
         
         it('showing all product by descending (Z-A)', async() => {
 
-            await InventoryPage.descFilterButton.click()
+            await InventoryPage.descFilterProduct()
             await expect()
         })
     })
