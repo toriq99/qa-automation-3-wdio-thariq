@@ -40,7 +40,7 @@ class InventoryPage extends Page {
     get numIconCart () {return $('#shopping_cart_container > a > span')}
 
     // get cart icon
-    get cartList () { return $('')}
+    get cartListBtn () { return $('#shopping_cart_container > a')}
 
 
     async openNavMenu () {
@@ -76,6 +76,10 @@ class InventoryPage extends Page {
     async addToCart () {
         await this.addToCartbtn.click()
         await this.removeCartbtn.waitForDisplayed()
+    }
+
+    async cartList () {
+        await this.cartListBtn.click()
     }
 
     open() {

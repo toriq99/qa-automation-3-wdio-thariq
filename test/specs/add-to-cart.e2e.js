@@ -1,6 +1,7 @@
 const InventoryPage = require('../pageobjects/inventory.page')
 const DetailInventory = require('../pageobjects/detail-inventory.page')
 const LoginPage = require('../pageobjects/login.page')
+const CartPage = require('../pageobjects/cart.page')
 
 
 describe('ADD TO CART STORY', () => {
@@ -18,8 +19,18 @@ describe('ADD TO CART STORY', () => {
         })
 
         it('cart icon should be +1"', async() => {
-            
+
             await expect(InventoryPage.numIconCart).toHaveTextContaining('1')
+        })
+    })
+
+    describe('as a user i want to see cart list', () => {
+
+        it('should navigate to cart page', async() => {
+            
+            await InventoryPage.cartList()
+
+            expect(CartPage.cartItemList).toBeExisting()
         })
     })
 })
